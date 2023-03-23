@@ -20,6 +20,9 @@
   --neutral-800: #0a1229;
   --primary-font: "Work Sans", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: border-box;
@@ -28,6 +31,7 @@
 }
 a {
   text-decoration: none;
+  color: var(--neutral-800);
 }
 
 ::-webkit-scrollbar {
@@ -175,9 +179,7 @@ nav a button:hover {
   background-color: var(--primary-600);
 }
 
-.image-card:hover > img {
-  transform: translateY(-1rem);
-}
+
 .image-card img {
   position: absolute;
   height: 100%;
@@ -199,7 +201,7 @@ nav a button:hover {
 }
 .my-name {
   position: relative;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 900;
   line-height: 1;
 }
@@ -210,10 +212,10 @@ nav a button:hover {
   content: "";
   position: absolute;
   bottom: 0;
-  height: 10px;
+  height: 6px;
 
   background-color: var(--primary-600);
-  animation: increase 2s linear 0.5s forwards;
+  animation: increase 1.5s linear 0.5s forwards;
 }
 .my-work {
   font-size: 2rem;

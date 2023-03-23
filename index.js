@@ -3,7 +3,6 @@ const menuBar = document.querySelector(".bars")
 const dropdownOverlay = document.querySelector(".dropdown-overlay")
 const dropdownContent = document.querySelector(".mobile-nav")
 
-window.scrollTo(0, document.body.scrollHeight)
 
 window.addEventListener("scroll", (e)=>{
     const scrollHeight = window.scrollY
